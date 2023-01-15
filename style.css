@@ -252,4 +252,7 @@ img {
     .position-btn span {
         font-size: 14px;
     }
+    .video-zoom:hover iframe {
+        transform: scale(1);
+      }
 }
