@@ -1,139 +1,206 @@
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 /* Common CSS */
-body{
+body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 /* Width */
-/* .width{
+.half-width {
+    width: 45%;
+}
+
+.banner,
+.main {
+    width: 80%;
+}
+
+/* Image Width */
+img {
     width: 100%;
-} */
+}
+
 /* .margin-auto */
-.m-auto{
+.m-auto {
     margin: auto;
 }
+
 /* margin-bottom */
-.m-bottom{
+.m-bottom {
     margin-bottom: 50px;
 }
+
 /* Font Weights */
-.font-weight-700{
+.font-weight-700 {
     font-weight: 700;
 }
-.font-weight-500{
+
+.font-weight-500 {
     font-weight: 500;
 }
-.font-weight-400{
+
+.font-weight-400 {
     font-weight: 400;
 }
+
 /* Font Size */
-.title{
+.title {
     font-size: 60px;
 }
-.sub-title{
+
+.sub-title {
     font-size: 40px;
 }
-.link-font{
+
+.link-font {
     font-size: 20px;
 }
-.p-font{
+
+.p-font {
     font-size: 16px;
 }
+
 /* Color*/
-.color-gray{
+.color-gray {
     color: #727272;
 }
-.color-dark-gray{
-    color: #424242;;
+
+.color-dark-gray {
+    color: #424242;
+    ;
 }
-.color-white{
-    color: #FFFFFF;;
+
+.color-white {
+    color: #FFFFFF;
+    ;
 }
-.color-orange{
+
+.color-orange {
     color: #FF900E;
 }
+
 /* Background */
-.background-pink{
+.background-pink {
     background-color: #FFF4E7;
 }
-.background-orange{
+
+.background-orange {
     background-color: #FF900E;
 }
+
+/* Button */
 .btn{
     padding: 20px 25px;
     border: none;
     border-radius: 10px;
     margin-top: 20px;
 }
+
+/* Common Flex */
+.nav,
+.feature,
+.enjoyable-feature {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Border Image */
+.border-img {
+    padding: 2rem;
+    border-style: solid;
+    border-image:
+        linear-gradient(to bottom,
+            #FF900E,
+            #FF900E) 0 0 0 1;
+    border-image-width: 4px;
+    border-radius: 20px;
+}
+
 /* ----------------------------------
             Common CSS End
 ------------------------------------ */
 /* Header CSS */
 /* nav */
-.nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.nav a{
+.nav a {
     margin-left: 30px;
     text-decoration: none;
 }
-/* Description Section */
-.description{
-    width: 45%;
-}
-/* Banner */
-.banner{
-    width: 80%;
-}
-.banner img{
-    width: 100%;
-}
+
+
 /* ------------------------
         Header Finish
 ---------------------------*/
-/* Main  */
-.main{
-    width: 80%;
-}
-.feature{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.feature-images{
+/* Main */
+/* Feature */
+.feature-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
-.feature-images img{
-    width: 100%;
+
+/* Enjoyable Features */
+.enjoyable-feature-list{
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    padding: 2rem;
+}
+.position{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+.position-btn{
+    padding: 40px 45px;
+    border: none;
+    border-radius: 10px;
 }
 
 /* Small Device */
 @media only screen and (max-width: 912px) {
-    .nav{
+    .nav, .feature {
         flex-direction: column;
     }
-    .nav a{
+
+    .nav a {
         display: flex;
         flex-direction: column;
     }
-    .title{
+
+    .title {
         font-size: 40px;
     }
-    .sub-title{
+
+    .sub-title {
         font-size: 30px;
     }
-    .description{
-        width: 80%;
+
+    .half-width {
+        width: 100%;
     }
-    .feature{
-        flex-direction: column;
-    }
-    .feature-images{
+
+    .feature-images {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .enjoyable-feature{
+        flex-direction: column-reverse;
+    }
+    .position-btn{
+        padding: 10px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+    .position{
+        top: 0;
+        left: 0;
+    }
+    .position-btn p{
+        font-size: 25px;
+    }
+    .position-btn span{
+        font-size: 14px;
     }
 }
