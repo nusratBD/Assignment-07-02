@@ -252,7 +252,8 @@ img {
     .position-btn span {
         font-size: 14px;
     }
+    .video-zoom iframe{
+        transition: none;
+    }
     .video-zoom:hover iframe {
-        transform: scale(0);
-      }
-}
+        transform: none;}}
