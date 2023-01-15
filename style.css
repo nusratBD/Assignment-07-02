@@ -183,6 +183,21 @@ img {
     height: 45px;
     width: 45px;
 }
+/* Videos: Bonus */
+.videos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.video-zoom iframe {
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in;
+  }
+  
+  /* The Transformation */
+  .video-zoom:hover iframe {
+    transform: scale(1.5);
+  }
 /* Small Device */
 @media only screen and (max-width: 912px) {
 
@@ -210,7 +225,7 @@ img {
         width: 100%;
     }
 
-    .feature-images {
+    .feature-images, .videos {
         grid-template-columns: repeat(1, 1fr);
     }
 
