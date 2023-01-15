@@ -12,7 +12,8 @@ body {
 }
 
 .banner,
-.main {
+.main,
+.footer {
     width: 80%;
 }
 
@@ -103,19 +104,16 @@ img {
 .nav,
 .feature,
 .enjoyable-feature,
-.facts {
+.facts,
+.sopnsors,
+ .bottom-footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.fact{
+.fact, .sponsor-heading, .bottom-footer{
     text-align: center;
 }
-.fact img{
-    height: 45px;
-    width: 45px;
-}
-
 
 /* Border Image */
 .border-img {
@@ -181,12 +179,17 @@ img {
     border-radius: 10px;
 }
 /* Facts */
+.fact img{
+    height: 45px;
+    width: 45px;
+}
 /* Small Device */
 @media only screen and (max-width: 912px) {
 
     .nav,
     .feature,
-    .facts {
+    .facts,
+    .sopnsors {
         flex-direction: column;
     }
 
