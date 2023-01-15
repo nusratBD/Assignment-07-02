@@ -3,7 +3,6 @@
 
 /* Common CSS */
 body {
-    margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -26,10 +25,12 @@ img {
 .m-auto {
     margin: auto;
 }
-
 /* margin-bottom */
 .m-bottom {
     margin-bottom: 50px;
+}
+.m-0{
+    margin: 0;
 }
 
 /* Font Weights */
@@ -101,10 +102,18 @@ img {
 /* Common Flex */
 .nav,
 .feature,
-.enjoyable-feature {
+.enjoyable-feature,
+.facts {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.fact{
+    text-align: center;
+}
+.fact img{
+    height: 45px;
+    width: 45px;
 }
 
 
@@ -171,12 +180,13 @@ img {
     border: none;
     border-radius: 10px;
 }
-
+/* Facts */
 /* Small Device */
 @media only screen and (max-width: 912px) {
 
     .nav,
-    .feature {
+    .feature,
+    .facts {
         flex-direction: column;
     }
 
