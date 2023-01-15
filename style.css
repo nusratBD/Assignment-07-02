@@ -253,6 +253,6 @@ img {
         font-size: 14px;
     }
     .video-zoom:hover iframe {
-        transform: scale(1);
+        transform: scale(0);
       }
 }
