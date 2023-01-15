@@ -13,6 +13,10 @@ body{
 .m-auto{
     margin: auto;
 }
+/* margin-bottom */
+.m-bottom{
+    margin-bottom: 50px;
+}
 /* Font Weights */
 .font-weight-700{
     font-weight: 700;
@@ -76,18 +80,38 @@ body{
     margin-left: 30px;
     text-decoration: none;
 }
-/* Dezcription Section */
+/* Description Section */
 .description{
-    width: 50%;
+    width: 45%;
 }
 /* Banner */
 .banner{
-    margin-top: 50px;
     width: 80%;
 }
 .banner img{
     width: 100%;
 }
+/* ------------------------
+        Header Finish
+---------------------------*/
+/* Main  */
+.main{
+    width: 80%;
+}
+.feature{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.feature-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.feature-images img{
+    width: 100%;
+}
+
 /* Small Device */
 @media only screen and (max-width: 912px) {
     .nav{
@@ -105,5 +129,11 @@ body{
     }
     .description{
         width: 80%;
+    }
+    .feature{
+        flex-direction: column;
+    }
+    .feature-images{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
