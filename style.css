@@ -196,7 +196,7 @@ img {
   
   /* The Transformation */
   .video-zoom:hover iframe {
-    transform: scale(1.5);
+    transform: scale(1.25);
   }
 /* Small Device */
 @media only screen and (max-width: 912px) {
