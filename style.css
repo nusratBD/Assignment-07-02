@@ -1,0 +1,109 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* Common CSS */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* Width */
+/* .width{
+    width: 100%;
+} */
+/* .margin-auto */
+.m-auto{
+    margin: auto;
+}
+/* Font Weights */
+.font-weight-700{
+    font-weight: 700;
+}
+.font-weight-500{
+    font-weight: 500;
+}
+.font-weight-400{
+    font-weight: 400;
+}
+/* Font Size */
+.title{
+    font-size: 60px;
+}
+.sub-title{
+    font-size: 40px;
+}
+.link-font{
+    font-size: 20px;
+}
+.p-font{
+    font-size: 16px;
+}
+/* Color*/
+.color-gray{
+    color: #727272;
+}
+.color-dark-gray{
+    color: #424242;;
+}
+.color-white{
+    color: #FFFFFF;;
+}
+.color-orange{
+    color: #FF900E;
+}
+/* Background */
+.background-pink{
+    background-color: #FFF4E7;
+}
+.background-orange{
+    background-color: #FF900E;
+}
+.btn{
+    padding: 20px 25px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+/* ----------------------------------
+            Common CSS End
+------------------------------------ */
+/* Header CSS */
+/* nav */
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav a{
+    margin-left: 30px;
+    text-decoration: none;
+}
+/* Dezcription Section */
+.description{
+    width: 50%;
+}
+/* Banner */
+.banner{
+    margin-top: 50px;
+    width: 80%;
+}
+.banner img{
+    width: 100%;
+}
+/* Small Device */
+@media only screen and (max-width: 912px) {
+    .nav{
+        flex-direction: column;
+    }
+    .nav a{
+        display: flex;
+        flex-direction: column;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .sub-title{
+        font-size: 30px;
+    }
+    .description{
+        width: 80%;
+    }
+}
