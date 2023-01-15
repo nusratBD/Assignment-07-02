@@ -91,7 +91,7 @@ img {
 }
 
 /* Button */
-.btn{
+.btn {
     padding: 20px 25px;
     border: none;
     border-radius: 10px;
@@ -141,18 +141,32 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
+.img-hover-zoom{
+    overflow: hidden;
+}
+.img-hover-zoom img {
+    transform-origin: 50% 65%;
+    transition: transform 3s, filter 1s ease-in-out;
+    filter: brightness(150%);
+}
+.img-hover-zoom:hover img {
+    filter: brightness(100%);
+    transform: scale(3);
+  }
 
 /* Enjoyable Features */
-.enjoyable-feature-list{
+.enjoyable-feature-list {
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     padding: 2rem;
 }
-.position{
+
+.position {
     position: absolute;
     bottom: 0;
     left: 50%;
 }
-.position-btn{
+
+.position-btn {
     padding: 40px 45px;
     border: none;
     border-radius: 10px;
@@ -160,7 +174,9 @@ img {
 
 /* Small Device */
 @media only screen and (max-width: 912px) {
-    .nav, .feature {
+
+    .nav,
+    .feature {
         flex-direction: column;
     }
 
@@ -184,23 +200,28 @@ img {
     .feature-images {
         grid-template-columns: repeat(1, 1fr);
     }
-    .enjoyable-feature{
+
+    .enjoyable-feature {
         flex-direction: column-reverse;
     }
-    .position-btn{
+
+    .position-btn {
         padding: 10px;
         height: 100px;
         display: flex;
         align-items: center;
     }
-    .position{
+
+    .position {
         top: 0;
         left: 0;
     }
-    .position-btn p{
+
+    .position-btn p {
         font-size: 25px;
     }
-    .position-btn span{
+
+    .position-btn span {
         font-size: 14px;
     }
 }
