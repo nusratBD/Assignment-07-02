@@ -26,11 +26,13 @@ img {
 .m-auto {
     margin: auto;
 }
+
 /* margin-bottom */
 .m-bottom {
     margin-bottom: 50px;
 }
-.m-0{
+
+.m-0 {
     margin: 0;
 }
 
@@ -106,12 +108,15 @@ img {
 .enjoyable-feature,
 .facts,
 .sopnsors,
- .bottom-footer{
+.bottom-footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.fact, .sponsor-heading, .bottom-footer{
+
+.fact,
+.sponsor-heading,
+.bottom-footer {
     text-align: center;
 }
 
@@ -148,18 +153,8 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
-.img-hover-zoom{
-    overflow: hidden;
-}
-.img-hover-zoom img {
-    transform-origin: 50% 65%;
-    transition: transform 3s, filter 1s ease-in-out;
-    filter: brightness(150%);
-}
-.img-hover-zoom:hover img {
-    filter: brightness(100%);
-    transform: scale(3);
-  }
+
+
 
 /* Enjoyable Features */
 .enjoyable-feature-list {
@@ -178,26 +173,42 @@ img {
     border: none;
     border-radius: 10px;
 }
+
 /* Facts */
-.fact img{
+.fact img {
     height: 45px;
     width: 45px;
 }
+
+.fact-hover-zoom {
+    transform-origin: 50% 65%;
+    transition: transform 3s, filter 1s ease-in-out;
+    filter: brightness(150%);
+    overflow: hidden;
+}
+
+.fact-hover-zoom:hover {
+    filter: brightness(100%);
+    transform: scale(3);
+}
+
 /* Videos: Bonus */
-.videos{
+.videos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+
 .video-zoom iframe {
     transform-origin: 0 0;
     transition: transform .25s, visibility .25s ease-in;
-  }
-  
-  /* The Transformation */
-  .video-zoom:hover iframe {
+}
+
+/* The Transformation */
+.video-zoom:hover iframe {
     transform: scale(1.25);
-  }
+}
+
 /* Small Device */
 @media only screen and (max-width: 912px) {
 
@@ -225,7 +236,8 @@ img {
         width: 100%;
     }
 
-    .feature-images, .videos {
+    .feature-images,
+    .videos {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -252,8 +264,12 @@ img {
     .position-btn span {
         font-size: 14px;
     }
-    .video-zoom iframe{
+
+    .video-zoom iframe {
         transition: none;
     }
+
     .video-zoom:hover iframe {
-        transform: none;}}
+        transform: none;
+    }
+}
