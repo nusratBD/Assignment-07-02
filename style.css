@@ -57,11 +57,9 @@ img {
 }
 .color-dark-gray {
     color: #424242;
-    ;
 }
 .color-white {
     color: #FFFFFF;
-    ;
 }
 .color-orange {
     color: #FF900E;
@@ -170,6 +168,9 @@ img {
 .video-zoom:hover iframe {
     transform: scale(1.25);
 }
+/* -----------------------
+        Main End 
+--------------------------*/
 /* Small Device */
 @media only screen and (max-width: 912px) {
     .nav,
