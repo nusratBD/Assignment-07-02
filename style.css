@@ -221,4 +221,7 @@ img {
     .video-zoom:hover iframe {
         transform: none;
     }
+    .fact-hover-zoom:hover {
+        transform: scale(1.5);
+    }
 }
